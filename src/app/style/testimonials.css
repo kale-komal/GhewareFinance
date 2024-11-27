@@ -1,0 +1,84 @@
+.Theading {
+  color: #054667;
+  font-size: 45px;
+}
+
+.Ticon {
+  font-size: 60px;
+  color: #054667;
+}
+
+.Tbrandicon {
+  color: #34758f;
+}
+
+.Tbrandicon:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.Tname {
+  color: #2b7ea7;
+}
+
+.Tsection {
+  padding: 10px;
+}
+.Tsection:hover {
+  /* background-color: #ddebf1; */
+  border-bottom: 2px solid #054667;
+}
+
+
+.Tprofile {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 300px;
+}
+.image-container img {
+  width: 100%;
+}
+
+.overlay-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(92, 171, 171, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 3px 3px 3px #003855;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 540px) {
+  .image-overlay {
+    height: 150px !important;
+  }
+  .image-container {
+    height: 150px !important;
+  }
+  .overlay-about {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image-overlay {
+    height: 200px !important;
+  }
+  .image-container {
+    height: 200px !important;
+  }
+}

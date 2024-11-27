@@ -1,0 +1,94 @@
+.aboutheading {
+    color: #054667;
+    text-align: start;
+  }
+  .aboutpara {
+    background-color: #bcd1db;
+    padding: 18px;
+  }
+
+  /*Detail about page*/
+  .image-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+  }
+  .image-container img {
+    width: 100%;
+  }
+  
+  .overlay-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(92, 171, 171, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 3px 3px 3px #003855;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .aboutdirector-info{
+font-size: 13px;
+  }
+  
+  .about-img{
+    height: 400px;
+    width: 500px;
+    margin-top: 50px;
+  }
+
+  
+  /* Media */
+  @media only screen and (min-width: 200px) and (max-width: 540px) {
+    .image-overlay{
+      height: 150px !important;
+    }
+    .image-container {
+      height: 150px !important;
+    }
+    .overlay-about{
+      font-size: 1.5rem;
+    }
+    .about-img{
+      max-width: 250px !important;
+      max-height: 280px !important;
+      margin-top: 10px !important;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+  p{
+    font-size: 12px;
+  }
+
+  }
+
+  @media (max-width: 1000px) {
+    .about-img{
+      max-width: 300px !important;
+      max-height: 300px !important;
+      margin-top: 200px ;
+    }
+  }
+  @media (max-width: 1200px) {
+    .image-overlay{
+      height: 200px !important;
+    }
+    .image-container {
+      height: 200px !important;
+    }
+    .about-img{
+      max-width: 300px !important;
+      max-height: 300px !important;
+      margin-top: 100px ;
+    }
+  }
+  

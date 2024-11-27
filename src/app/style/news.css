@@ -1,0 +1,116 @@
+.news-footer {
+  color: #297edf;
+}
+.card-footer {
+  text-decoration: none;
+}
+.news-footer:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.news-date {
+  font-size: 13px;
+  color: lightslategray;
+}
+.newsheading {
+  color: #054667;
+}
+
+/*main page*/
+.image-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 300px;
+}
+.image-container img {
+  width: 100%;
+}
+
+.overlay-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(92, 171, 171, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 3px 3px 3px #003855;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.news-dates {
+  font-size: 20px;
+  color: lightslategray;
+}
+
+/*social media icon*/
+.Nsocial-share {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: sticky; /* Make the element sticky */
+  top: 20px; /* Adjust the value to control when it becomes sticky */
+  z-index: 10;
+}
+
+.Nsocial-share-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.Nsocial-icons i {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.Nsocial-icons i:hover {
+  transform: scale(1.1);
+}
+
+/* Style the first letter of the text */
+.card-texts::first-letter {
+  font-size: 3rem;
+  font-weight: bold; 
+  color: #333; 
+  float: left; 
+  margin-right: 5px; 
+}
+
+
+/* Media */
+@media only screen and (min-width: 200px) and (max-width: 540px) {
+  .image-overlay {
+    height: 150px !important;
+  }
+  .image-container {
+    height: 150px !important;
+  }
+ 
+  .news-img{
+    height: 200px;
+    width: 200px;
+  }
+  .card-texts {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image-overlay {
+    height: 200px !important;
+  }
+  .image-container {
+    height: 200px !important;
+  }
+  .overlay-about {
+    font-size: 2.5rem !important;
+  }
+}

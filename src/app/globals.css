@@ -1,42 +1,74 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+/*Basic classes*/
+.themePrimary {
+  color: #5cabcb;
+}
+.themeSecondary {
+  color: #003855;
+}
+.themePrimaryBg {
+  background-color: #5cabcb;
+}
+.themeSecondaryBg {
+  background-color: #003855;
+}
+.link{
+  text-decoration: none;
+}
+/*banner section*/
+.bannerImg {
+  height: 400px !important;
+  width: auto !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/*status section*/
+.statusbg-img {
+  height: 200px;
+  width: 100%;
+  opacity: 0.9;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.status-text {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+}
+
+/*Top button*/
+#topBtn:hover {
+    background-color: #003855 !important;
+  }
+
+  /* Media */
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  .logo img {
+    max-height: 50px; /* Adjust logo height */
+  }
+  .bannerImg {
+    height: 200px !important;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+/* Ensure navbar doesn't overflow or affect container height */
+@media (max-width: 767.98px) {
+    .projectButton{
+        font-size: 15px;
+    padding: 8px;
+    width: 100px;
+    }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (max-width: 980px) {
+  .bannerImg {
+    height: 280px !important;
   }
 }

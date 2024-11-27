@@ -1,0 +1,86 @@
+.sectionheading {
+  font-size: 42px;
+  color: #003855;
+}
+
+.iconFs {
+  font-size: 50px;
+  color: #003855;
+  text-shadow: 2px 2px 2px #5cabcb;
+}
+
+.sectionpara {
+  color: #054667;
+}
+
+.servicelink {
+  text-decoration: none;
+}
+
+/* Detail Service page*/
+.image-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 300px;
+}
+.image-container img {
+  width: 100%;
+}
+
+.overlay-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(92, 171, 171, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 3px 3px 3px #003855;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#Services li {
+  padding: 3px;
+}
+
+/* Media */
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  .image-overlay{
+    height: 150px !important;
+  }
+  .image-container {
+    height: 150px !important;
+  }
+  .service-img{
+    max-width: 280px !important;
+    max-height: 200px !important;
+  }
+  .service-clm-img{
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 1200px) {
+  .service-img{
+    /* margin-top: 50px !important; */
+    max-width: 320px ;
+    max-height: 220px ;
+  }
+  .image-overlay{
+    height: 200px !important;
+  }
+  .image-container {
+    height: 200px !important;
+  }
+}
